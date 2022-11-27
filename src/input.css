@@ -38,3 +38,10 @@ p{
     height: 30%;
     width: 30%;
 }
+.fiveDay{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+forecastGrid{
+    border: solid 1px #f6f5f5; 
+}
