@@ -41,7 +41,8 @@ p{
 .fiveDay{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    border: solid 1px #f6f5f5; 
 }
 forecastGrid{
-    border: solid 1px #f6f5f5; 
+    border: solid 2px #f6f5f5; 
 }
