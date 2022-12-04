@@ -36,7 +36,7 @@ const fiveDay = async () => {
   for(let i = 0; i < kickArray.length; i++){
     forecastGrid[i].innerHTML = kickArray[i].main.temp + "° " + unitMode;
     let fiveDaySnaps = new Image();
-    fiveDaySnaps.src = "https://openweathermap.org/img/wn/" + kickArray[i].weather[0].icon +"@2x.png"
+    fiveDaySnaps.src = "https://openweathermap.org/img/wn/" + kickArray[i].weather[0].icon +"@2x.png";
     forecastGrid[i].appendChild(fiveDaySnaps);
   }
   console.log(fiveData);
