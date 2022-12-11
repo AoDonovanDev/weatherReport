@@ -15,13 +15,16 @@ const parseWeatherData = async () => {
   let todayCard = document.getElementById("currentTemp");
   let snap = new Image();
   let condition = document.createElement('p');
+  let cardLeft = document.createElement('div');
   feelsTxt.innerHTML = "feels like " + rawData.main.feels_like;
   condition.innerHTML = rawData.weather[0].description;
   cardTxt.innerHTML = rawData.main.temp + "° " + unitMode;
   snap.src = "https://openweathermap.org/img/wn/" + rawData.weather[0].icon +"@2x.png"
+  cardLeft.classList.add("cardLeft");
   snap.classList.add("snap");
-  todayCard.appendChild(cardTxt);
-  todayCard.appendChild(condition);
+  cardLeft.appendChild(cardTxt);
+  cardLeft.appendChild(condition);
+  todayCard.appendChild(cardLeft);
   todayCard.appendChild(snap);
   todayCard.appendChild(feelsTxt);
   parsedArray.push(rawData.weather);
